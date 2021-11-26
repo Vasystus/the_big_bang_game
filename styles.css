@@ -1,0 +1,98 @@
+ html, body {
+     height: 100%;
+     margin: 0;
+    
+ }
+
+body {
+    text-align: center;
+    width: 70%;
+    max-width: 700px;
+    margin: auto; 
+    color:aliceblue;
+} 
+
+.header {
+    color:rgb(245, 248, 250);
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #4ba7cc;
+}
+.curtain {
+    background-image: url("https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+@media only screen and (max-width: 760px) {
+    .img {
+      /* to improve page load speed on mobile internet connections */
+      background-image: url(https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    }
+  }
+  .play_area{
+    text-align: center;
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .move_button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px 12px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border: none;
+  }
+  
+  
+  .move_button_rock:hover {
+    background-color: #363631;
+    color: white;
+  }
+   .move_button_paper:hover {
+    background-color: #dfe06f;
+    color: white;
+   }
+
+   .move_button_scissors:hover {
+    background-color: #4b4d4e;
+    color: white;
+   }
+
+   .move_button_lizard:hover {
+    background-color: #13b664;
+    color: white;
+   }
+
+   .move_button_spock:hover {
+    background-color: #4ba7cc;
+    color: white;
+   }
+
+
+  .outcome_text {
+    padding: 18px;
+    margin:18px auto;
+    margin-bottom: 16px;
+    background-color: #eee;
+    border-radius: 30px;
+    color:black;
+  }
+
+
+  p {
+    padding-bottom: 10px;
+  
+  }

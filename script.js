@@ -32,14 +32,24 @@ const calculateWinner = (event) => {
 
   // Check if there is a tie
   if (userChoice === shellyChoice) {
-    return "Bazinga! It's a tie!";
+    return "All hail Sam Kass! It's a tie!";
+  } else if((userChoice === 'scissors' && shellyChoice === 'paper') 
+    || ( userChoice === 'rock' && shellyChoice === 'scissors') 
+    || ( userChoice === 'paper' && shellyChoice === 'rock') 
+    || (userChoice === 'rock' && shellyChoice === 'lizard') 
+    || (userChoice === 'lizard' && shellyChoice === 'Spock' ) 
+    || (userChoice === 'Spock' && shellyChoice === 'scissors') 
+    || (userChoice === 'scissors' && shellyChoice === 'lizard') 
+    || ( userChoice === 'lizard' && shellyChoice === 'paper') 
+    || (userChoice === 'paper' && shellyChoice === 'Spock') 
+    || (userChoice === 'Spock' && shellyChoice === 'rock')){
+    return "Congratulations! You won!";
   }
-
-  // Else, check user choice
-
-  // Check if win or lose (depends on the computer choice)
-
+  else {
+    return "Bazinga! Sheldon won!";
+  }
 }
+
 // Display the winner
 function updateDOM(event) {
   outcomeText.textContent = calculateWinner(event);
