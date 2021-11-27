@@ -32,7 +32,7 @@ const calculateWinner = (event) => {
 
   // Check if there is a tie
   if (userChoice === shellyChoice) {
-    return "All hail Sam Kass! It's a tie!";
+    return "All hail Sam Kass!  It's a tie!";
   } else if((userChoice === 'scissors' && shellyChoice === 'paper') 
     || ( userChoice === 'rock' && shellyChoice === 'scissors') 
     || ( userChoice === 'paper' && shellyChoice === 'rock') 
@@ -43,10 +43,10 @@ const calculateWinner = (event) => {
     || ( userChoice === 'lizard' && shellyChoice === 'paper') 
     || (userChoice === 'paper' && shellyChoice === 'Spock') 
     || (userChoice === 'Spock' && shellyChoice === 'rock')){
-    return "Congratulations! You won!";
+    return "Congratulations!  You won!";
   }
   else {
-    return "Bazinga! Sheldon won!";
+    return "Bazinga!  Sheldon won!";
   }
 }
 

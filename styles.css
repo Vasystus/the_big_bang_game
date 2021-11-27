@@ -6,19 +6,20 @@
 
 body {
     text-align: center;
-    width: 70%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 760px;
     margin: auto; 
-    color:aliceblue;
+    color:rgb(245, 235, 250);
 } 
 
 .header {
-    color:rgb(245, 248, 250);
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: #4ba7cc;
+    font-size: 26px;
+    color: rgb(181, 166, 247);
 }
 .curtain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-image: url("https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
     background-position: center center;
     background-repeat: no-repeat;
@@ -35,8 +36,8 @@ body {
   }
   .play_area{
     text-align: center;
-    width: 70%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 760px;
     margin: auto;
   }
 
@@ -44,30 +45,29 @@ body {
     background-color: white;
     border: none;
     color: black;
-    padding: 8px 12px ;
+    padding: 10px 18px ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
-    margin: 4px 4px;
+    font-size: 18px;
+    margin: 12px;
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
-    border: none;
+    
   }
   
-  
   .move_button_rock:hover {
-    background-color: #363631;
+    background-color: #a1a19d;
     color: white;
   }
    .move_button_paper:hover {
-    background-color: #dfe06f;
+    background-color: #f0711d;
     color: white;
    }
 
    .move_button_scissors:hover {
-    background-color: #4b4d4e;
+    background-color: #642222;
     color: white;
    }
 
@@ -81,18 +81,23 @@ body {
     color: white;
    }
 
-
+  .rules {
+    font-size: 20px;
+  }
   .outcome_text {
-    padding: 18px;
-    margin:18px auto;
-    margin-bottom: 16px;
-    background-color: #eee;
-    border-radius: 30px;
+    font-size: 22px;
+    padding: 10px;
+    margin: 18px auto;
+    margin-bottom: 10px;
+    background-color: rgb(199, 189, 243);
+    border-radius: 10px;
     color:black;
+    font-weight: bolder;
   }
 
-
-  p {
-    padding-bottom: 10px;
-  
+  .sheldon_choice {
+    font-size: 22px;
   }
+.choose_move {
+  color: rgb(181, 166, 247);
+}
