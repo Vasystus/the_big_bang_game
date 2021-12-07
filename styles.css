@@ -1,103 +1,110 @@
- html, body {
-     height: 100%;
-     margin: 0;
-    
- }
+html, body {
+    height: auto;
+    margin: 0;
+}
 
 body {
-    text-align: center;
-    width: 80%;
-    max-width: 760px;
-    margin: auto; 
-    color:rgb(245, 235, 250);
-} 
+   text-align: center;
+   width: 80%;
+   height: 100%;
+   max-width: 760px;
+   margin: auto;
+   color: rgb(245, 235, 250);
+}
 
 .header {
-    font-size: 26px;
-    color: rgb(181, 166, 247);
+   font-size: 26px;
+   color: rgb(181, 166, 247);
 }
+
 .curtain {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-image: url("https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   background-image: url("https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   border-radius: 12px;
 }
+
 
 @media only screen and (max-width: 760px) {
-    .img {
-      /* to improve page load speed on mobile internet connections */
-      background-image: url(https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    }
-  }
-  .play_area{
-    text-align: center;
-    width: 100%;
-    max-width: 760px;
-    margin: auto;
-  }
-
-  .move_button {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 10px 18px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 12px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-    
-  }
-  
-  .move_button_rock:hover {
-    background-color: #a1a19d;
-    color: white;
-  }
-   .move_button_paper:hover {
-    background-color: #f0711d;
-    color: white;
+   img {
+     /* to improve page load speed on mobile internet connections */
+     background-image: url(https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
    }
+}
 
-   .move_button_scissors:hover {
-    background-color: #642222;
-    color: white;
-   }
+.play_area {
+   text-align: center;
+   width: 100%;
+   max-width: 760px;
+   margin: auto;
+}
 
-   .move_button_lizard:hover {
-    background-color: #13b664;
-    color: white;
-   }
+.move_button {
+   background-color: #F08080;
+   border: none;
+   color: black;
+   padding: 10px 18px ;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   margin: 12px;
+   cursor: pointer;
+   border-radius: 12px;
+   transition-duration: 0.4s;
+}
 
-   .move_button_spock:hover {
-    background-color: #4ba7cc;
-    color: white;
-   }
+.move_button_rock:hover {
+   background-color: #303030;
+   color: white;
+}
 
-  .rules {
-    font-size: 20px;
-  }
-  .outcome_text {
-    font-size: 22px;
-    padding: 10px;
-    margin: 18px auto;
-    margin-bottom: 10px;
-    background-color: rgb(199, 189, 243);
-    border-radius: 10px;
-    color:black;
-    font-weight: bolder;
-  }
+.move_button_paper:hover {
+   background-color: #FFBF00 ;
+   color: white;
+}
 
-  .sheldon_choice {
-    font-size: 22px;
-  }
+.move_button_scissors:hover {
+   background-color: #642222;
+   color: white;
+}
+
+.move_button_lizard:hover {
+   background-color: #32CD32;
+   color: white;
+}
+
+.move_button_spock:hover {
+   background-color: #4ba7cc;
+   color: white;
+}
+
+.rules {
+   font-size: 20px;
+}
+
+.outcome_text {
+   font-size: 22px;
+   padding: 10px;
+   margin: 18px auto;
+   margin-bottom: 10px;
+   background-color: #000080;;
+   border-radius: 10px;
+   color:white;
+   font-weight: bolder;
+}
+
+.sheldon_choice {
+   font-size: 22px;
+   font-weight: 600;
+   color:rgb(181, 166, 247);
+}
+
 .choose_move {
-  color: rgb(181, 166, 247);
+ color: #32CD32;
 }
